@@ -17,6 +17,8 @@ public class Map1 {
 		map.put("id", "hong"); //put("key이름","데이터");
 		map.put("name", "홍길동");
 		map.put("id", "kang");
+		map.put("name", "홍길동");
+		map.put("id", "kang");
 		map.remove("id"); //삭제시 key명으로 삭제
 		System.out.println(map);
 		System.out.println(map.get("name")); //key이름으로 데이터값 출력

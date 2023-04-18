@@ -17,6 +17,7 @@ public class Try1 {
 		catch (Exception e) { //오류발생된 사항
 			System.out.println(e);
 			System.out.println("숫자만 입력하세요");
+			
 		}
 	}
 
