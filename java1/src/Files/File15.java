@@ -14,13 +14,13 @@ public class File15 {
 			Path data1 = Paths.get("E:\\git_java\\javaproject\\java1\\src\\Files\\notice.txt");
 			Path data2 = Paths.get("E:\\git_java\\javaproject\\java1\\src\\Files\\notice2.txt");
 			Files.copy(data1, data2);
-			
-			Path data3 = Paths.get("E:\\git_java\\javaproject\\java1\\src\\Files\\notice2.txt");
-			Path directory = Paths.get("E:\\memo\\notice2.txt");	
-			Files.move(data3, directory);
-			
-			Path data4 = Paths.get("E:\\git_java\\javaproject\\java1\\src\\Files\\abc.txt");
-			Files.delete(data4);
+			//파일이동기능
+			//Path data3 = Paths.get("E:\\git_java\\javaproject\\java1\\src\\Files\\notice2.txt");
+			//Path directory = Paths.get("E:\\memo\\notice2.txt");	
+			//Files.move(data3, directory);
+			//파일삭제
+			//Path data4 = Paths.get("E:\\git_java\\javaproject\\java1\\src\\Files\\abc.txt");
+			//Files.delete(data4);
 		}catch (Exception e) {
 			// TODO: handle exception
 		}
