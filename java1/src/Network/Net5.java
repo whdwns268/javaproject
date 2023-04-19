@@ -12,17 +12,17 @@ public class Net5 {
 	//양방향 : 자동 업데이트
 	public static void main(String[] args) {
 		System.out.println("Sever Connect");
-		int port = 9001; //포트번호 셋팅
+		int port = 9002; //포트번호 셋팅
 		try {
 			ServerSocket ss = new ServerSocket(port);//오픈시킬 포트를 적용
 			while(true) {
-				System.out.println("연결 대기중...");
+				System.out.println("Server Result...");
 				//accept : 클라이언트가 들어오는 것을 대기하는 역활을 하게됨
 				Socket sc = ss.accept();
 				
 				//client가 접속 했을 경우 해당 라인을 시작합니다.
 				//접속완료
-				System.out.println("호스트:통신 연결 성공");
+				System.out.println("Host:");
 				
 				//Server에서 client로 받는 통로
 				InputStream is = sc.getInputStream();
@@ -37,7 +37,7 @@ public class Net5 {
 				//출력
 				System.out.println(msgclient);
 				//클라이언트로 메세지 전송
-				String aws = "반갑습니다."; //서버에서 보내는 메세지
+				String aws = "hello"; //서버에서 보내는 메세지
 				os.write(aws.getBytes()); //클라이언트로 보내기 위한 메모리 저장
 				os.flush();
 				os.close();
